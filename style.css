@@ -8,10 +8,11 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Poppins";
-    scroll-behavior: smooth;
 }
 header{
     width: 80%;
@@ -38,10 +39,12 @@ header{
 .navbar-nav{
     list-style-type: none;
     display: flex;
-    
+    justify-content: center;
 }
-.nav-item{
+.nav-item a{
     margin: 0 20px;
+    color: white;
+    text-decoration: none;
 }
 #hero{
     background-image: url("images/bg1.jpg");
@@ -125,6 +128,11 @@ header{
     margin: auto;
     font-size: 30px;
 }
+.promo-content p{
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
 .content2{
     margin-top: 10vh;
     display: flex;
@@ -154,6 +162,7 @@ header{
 .column{
     flex: 33.333%;
     padding: 0 4px;
+    max-width: 33.333%;
 
 }
 .column img{
@@ -223,6 +232,9 @@ footer{
     .navbar h2{
         text-align: center;
     }
+    .nav-item{
+        justify-content: center;
+    }
     #card{
         display: block;
     }
@@ -250,5 +262,9 @@ footer{
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
+    }
+    .row .column{
+        flex: 100%;
+        max-width: 100%;
     }
 }
