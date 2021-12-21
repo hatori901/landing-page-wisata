@@ -272,4 +272,10 @@ footer{
         flex: 100%;
         max-width: 100%;
     }
+    #contact .content{
+        display: block;
+    }
+    .contact-address{
+        margin-top: 20px;
+    }
 }
