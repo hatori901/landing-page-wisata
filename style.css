@@ -52,6 +52,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 110vh;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
 }
 .hero-content{
     text-align: center;

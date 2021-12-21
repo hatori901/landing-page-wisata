@@ -13,3 +13,14 @@ function reveal(){
 }
 
 window.addEventListener('scroll',reveal);
+
+window.onload = function (){
+    var images = ["./images/bg1.jpg","./images/bg2.jpg","./images/bg3.jpg"];
+    
+    function changeImage(){
+        var i = Math.floor(Math.random() * 3);
+        document.getElementById("hero").style.backgroundImage = "url('"+ images[i] +"')";
+    }
+    setInterval(changeImage,5000)
+    
+}
